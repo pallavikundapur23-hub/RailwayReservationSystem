@@ -23,3 +23,11 @@ java -cp out app.Main
 ```
 
 All data is stored in memory and resets when the application exits.
+
+## Included requirements
+- Four OOP pillars: abstraction, encapsulation, inheritance, and overriding-based polymorphism.
+- Custom checked exceptions for unavailable seats, invalid trains, and missing bookings.
+- Self-implemented array-backed FIFO waiting queue.
+- ArrayList, HashMap, and HashSet collections.
+- Scanner-based console interaction.
+- No GUI, frontend, database, or external dependencies.
