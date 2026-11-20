@@ -1,5 +1,6 @@
 package service;
 
+import exceptions.SeatNotAvailableException;
 import model.Booking;
 import model.Passenger;
 import model.Train;
@@ -15,8 +16,8 @@ public class BookingService {
     private final Map<String, Booking> bookingsByPnr = new HashMap<>();
     private final SeatService seatService = new SeatService();
 
-    public Booking bookConfirmed(Passenger passenger, Train train) {
-        if (!seatService.reserveSeat(train)) return null;
+    public Booking bookConfirmed(Passenger passenger, Train train) throws SeatNotAvailableException {
+        if (!seatService.reserveSeat(train)) throw new SeatNotAvailableException("No confirmed seats are available on this train.");
         Booking booking = new Booking(PNRGenerator.nextPnr(), passenger, train, Booking.Status.CONFIRMED);
         bookings.add(booking); bookingsByPnr.put(booking.getPnr(), booking);
         return booking;
