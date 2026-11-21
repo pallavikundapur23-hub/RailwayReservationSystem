@@ -241,15 +241,8 @@ The following functionalities should be tested before submission:
 - Booking history is displayed.
 - Invalid user inputs are handled.
 
-## 12. Limitations
 
-- The application uses in-memory storage.
-- Booking and passenger records are not permanently stored.
-- Data is reset when the application terminates.
-- No database or external storage is used.
-- No frontend, GUI or web interface is included.
-
-## 13. Conclusion
+## 12. Conclusion
 
 The Railway Reservation System demonstrates the practical implementation of Java Object-Oriented Programming, custom exception handling, Java Collections Framework and a self-implemented Queue data structure.
 
@@ -257,6 +250,4 @@ The project provides a console-based approach to railway reservation management,
 
 It also demonstrates collaborative software development practices through Git, feature branches, meaningful commits and GitHub Pull Requests.
 
-## 14. GitHub Repository
 
-**Repository:** https://github.com/pallavikundapur23-hub/RailwayReservationSystem
